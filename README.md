@@ -67,3 +67,15 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 ## Development server
 ...
+
+
+<!-- ng build --base-href "https://Kaushal-kurhe.github.io/MyProject/" >> angular-build
+
+npx angular-cli-ghpages --dir=docs/browser >>> website live 
+
+
+from developer branch
+git add .
+git commit -m 'msg'
+git push
+-->

@@ -1,0 +1,58 @@
+ <div class="login-container">
+  <div class="video-container">
+    <video autoplay loop muted id="video-bg">
+      <source  src="https://tactusmarketing.com/wp-content/uploads/tactus-waves-hero.mp4" type="video/mp4">
+      <!-- <source autoplay  src="https://tactusmarketing.com/wp-content/uploads/tactus-waves-hero.mp4" type="video/mp4"> -->
+      </video>
+    </div>
+
+    <img class="film" src="https://picsum.photos/300/200" alt="Film Reel">
+    <div class="logo">ROTTEN POTATOES</div>
+    <div class="desc">
+      Rotten Potatoes is the world's most trusted recommendation resource for
+      quality entertainment. As the leading online aggregator of movie and TV
+      show reviews from critics, we provide fans with a comprehensive guide to
+      what’s Fresh - and what’s Rotten - in theaters and at home. If you’re an
+      entertainment fan looking for a recommendation, or to share an opinion,
+      you’ve come to the right place.
+    </div>
+  
+<!--  <div class="login-form">
+    <div class="form">
+        <label for="uname">Username</label>
+        <input type="text" name="uname" />
+    </div>
+    <label for="pword">Password</label>
+    <input type="text" name="pword" />
+</div>
+
+<button class="btn btn-danger">login</button>
+</div>
+   -->
+     <div class="main">  	
+       <input type="checkbox" id="chk" aria-hidden="true">
+   
+         <div class="signup">
+           <form>
+             <label for="chk" aria-hidden="true">Sign up</label>
+             <input type="text" name="txt" placeholder="User name" [(ngModel)]="signupObj.userName">
+             <input type="email" name="email" placeholder="Email" [(ngModel)]="signupObj.email">
+             <!-- <input type="number" name="broj" placeholder="BrojTelefona" [(ngModel)]="signupObj."> -->
+             <input type="password" name="pswd" placeholder="Password" [(ngModel)]="signupObj.password">
+             <button (click)="onSignup()">Sign up</button>
+           </form>
+         </div>
+   
+         <div class="login">
+           <form>
+             <label for="chk" aria-hidden="true">Login</label>
+             <input type="userName" name="userName" placeholder="userName" [(ngModel)]="loginobj.userName">
+             <input type="password" name="psword" placeholder="Password" [(ngModel)]="loginobj.password">
+             <button (click)="onLogin()">Login</button>
+           </form>
+         </div>
+     </div>
+    </div>
+
+    
+  
