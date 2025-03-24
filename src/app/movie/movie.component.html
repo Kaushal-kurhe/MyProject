@@ -1,72 +1,177 @@
-<!-- <p>movie works!</p> -->
 <app-header></app-header>
-
- <body>
+<body>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Movie Cards</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+
+  <!-- Marquee Section -->
+  <div class="marquee-container">
+    <div class="marquee-content">
+      <p class="marquee-text">
+        Find your next favorite movie! Browse our collection of trending and classic films.
+      </p>
+      <p class="marquee-text">
+        Find your next favorite movie! Browse our collection of trending and classic films.
+      </p>
+    </div>
+  </div>
+
+  <!-- Background Video (Moved Outside .movie-container) -->
+  <div class="video-container">
+    <video id="video-bg" autoplay muted loop playsinline preload="auto">
+      <source src="assets/videos/tactus-waves-hero.mp4" type="video/mp4">
+      <source src="assets/videos/tactus-waves-hero.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Movies Section -->
   <div class="movie-container">
-    <div class="video-container">
-      <video autoplay loop muted id="video-bg">
-        <source  src="https://tactusmarketing.com/wp-content/uploads/tactus-waves-hero.mp4" type="video/mp4">
-        <!-- <source autoplay  src="https://tactusmarketing.com/wp-content/uploads/tactus-waves-hero.mp4" type="video/mp4"> -->
-        </video>
-      </div>
+
+    <!-- Movie 1 -->
     <div class="movie-card">
       <div class="movie-card-inner">
         <div class="movie-card-front">
-          <img src="/src/assets/creed.jpg" alt="Movie 1">
+          <img src="https://image.tmdb.org/t/p/w500/AoWY1gkcNzabh229Icboa1Ff0BM.jpg" alt="Movie 1">
         </div>
         <div class="movie-card-back">
-          <p class="movie-title">Baby John</p>
-          <p class="movie-year">2025</p>
-        </div>
-      </div>
-    </div>
-    <div class="movie-card">
-      <div class="movie-card-inner">
-        <div class="movie-card-front">
-          <img src="movie2.jpg" alt="Movie 2">
-        </div>
-        <div class="movie-card-back">
-          <p class="movie-title">Masterpiece</p>
-          <p class="movie-year">2024</p>
-        </div>
-      </div>
-    </div>
-    <div class="movie-card">
-      <div class="movie-card-inner">
-        <div class="movie-card-front">
-          <img src="movie3.jpg" alt="Movie 3">
-        </div>
-        <div class="movie-card-back">
-          <p class="movie-title">Dhoom Dhaam</p>
-          <p class="movie-year">2023</p>
-        </div>
-      </div>
-    </div>
-    <div class="movie-card">
-      <div class="movie-card-inner">
-        <div class="movie-card-front">
-          <img src="movie4.jpg" alt="Movie 4">
-        </div>
-        <div class="movie-card-back">
-          <p class="movie-title">American Heist</p>
-          <p class="movie-year">2022</p>
-        </div>
-      </div>
-    </div>
-    <div class="movie-card">
-      <div class="movie-card-inner">
-        <div class="movie-card-front">
-          <img src="movie5.jpg" alt="Movie 5">
-        </div>
-        <div class="movie-card-back">
-          <p class="movie-title">Makal</p>
+          <p class="movie-title">Vanquish</p>
           <p class="movie-year">2021</p>
         </div>
       </div>
     </div>
-  </div>
+
+    <!-- Movie 2 -->
+    <div class="movie-card">
+      <div class="movie-card-inner">
+        <div class="movie-card-front">
+          <img src="https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg" alt="Movie 2">
+        </div>
+        <div class="movie-card-back">
+          <p class="movie-title">Wonder Woman</p>
+          <p class="movie-year">1984</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Movie 3 -->
+    <div class="movie-card">
+      <div class="movie-card-inner">
+        <div class="movie-card-front">
+          <img src="https://image.tmdb.org/t/p/w500/jTswp6KyDYKtvC52GbHagrZbGvD.jpg" alt="Movie 3">
+        </div>
+        <div class="movie-card-back">
+          <p class="movie-title">Luca</p>
+          <p class="movie-year">2021</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Movie 4 -->
+    <div class="movie-card">
+      <div class="movie-card-inner">
+        <div class="movie-card-front">
+          <img src="https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg" alt="Movie 4">
+        </div>
+        <div class="movie-card-back">
+          <p class="movie-title">John Wick 4</p>
+          <p class="movie-year">2022</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Movie 5 -->
+    <div class="movie-card">
+      <div class="movie-card-inner">
+        <div class="movie-card-front">
+          <img src="https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg" alt="Movie 5">
+        </div>
+        <div class="movie-card-back">
+          <p class="movie-title">Avatar</p>
+          <p class="movie-year">2021</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Movie 6 -->
+    <div class="movie-card">
+      <div class="movie-card-inner">
+        <div class="movie-card-front">
+          <img src="https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_.jpg" alt="Movie 6">
+        </div>
+        <div class="movie-card-back">
+          <p class="movie-title">Spider-Man: No Way Home</p>
+          <p class="movie-year">2021</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Movie 7 -->
+    <div class="movie-card">
+      <div class="movie-card-inner">
+        <div class="movie-card-front">
+          <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg" alt="Movie 7">
+        </div>
+        <div class="movie-card-back">
+          <p class="movie-title">Avengers Endgame</p>
+          <p class="movie-year">2019</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Movie 8 -->
+    <div class="movie-card">
+      <div class="movie-card-inner">
+        <div class="movie-card-front">
+          <img src="https://m.media-amazon.com/images/M/MV5BODA5Y2M0NjctNWQzMy00ODRhLWE0MzUtYmE1YTAzZjYyYmQyXkEyXkFqcGc@._V1_FMjpg_UY5000_.jpg" alt="Movie 8">
+        </div>
+        <div class="movie-card-back">
+          <p class="movie-title">How to Train Your Dragon</p>
+          <p class="movie-year">2010</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Movie 9 -->
+    <div class="movie-card">
+      <div class="movie-card-inner">
+        <div class="movie-card-front">
+          <img src="https://m.media-amazon.com/images/M/MV5BZDU5ZTRkYmItZjg0Mi00ZTQwLThjMWItNWM3MTMxMzVjZmVjXkEyXkFqcGc@._V1_.jpg" alt="Movie 9">
+        </div>
+        <div class="movie-card-back">
+          <p class="movie-title">Knives Out</p>
+          <p class="movie-year">2019</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Movie 10 -->
+    <div class="movie-card">
+      <div class="movie-card-inner">
+        <div class="movie-card-front">
+          <img src="https://image.tmdb.org/t/p/original/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg" alt="Movie 10">
+        </div>
+        <div class="movie-card-back">
+          <p class="movie-title">Super Mario Bros</p>
+          <p class="movie-year">2021</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Movie 11 -->
+    <div class="movie-card">
+      <div class="movie-card-inner">
+        <div class="movie-card-front">
+          <img src="https://m.media-amazon.com/images/M/MV5BN2FjNWExYzEtY2YzOC00YjNlLTllMTQtNmIwM2Q1YzBhOWM1XkEyXkFqcGc@._V1_.jpg" alt="Movie 11">
+        </div>
+        <div class="movie-card-back">
+          <p class="movie-title">Shutter Island</p>
+          <p class="movie-year">2010</p>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- Closing .movie-container -->
+
 </body>
