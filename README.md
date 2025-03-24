@@ -75,7 +75,7 @@ npx angular-cli-ghpages --dir=docs/browser >>> website live
 
 
 from developer branch
-git add .
+git add .g
 git commit -m 'msg'
 git push
 -->
